@@ -1,19 +1,22 @@
-<html lang="en">
-  <head>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-7FN7LEVWXD"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7FN7LEVWXD"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-7FN7LEVWXD');
+    </script>
 
-          gtag('config', 'G-7FN7LEVWXD');
-        </script>
-
-  
     <title>NicLife</title>
-    <script src="../../storage/js/cloak.js"></script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="shortcut icon" href="logo.png" type="image/png">
+    <link rel="apple-touch-icon" href="logo.png">
+
+    <script src="storage/js/cloak.js"></script>
     <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="../../images/ico.ico" type="image/x-icon">
+
     <style>
       body {
         margin: 0;
@@ -21,16 +24,11 @@
         background-color: black;
       }
     </style>
-	<script src="TemplateData/UnityProgress.js"></script>
+
+    <script src="TemplateData/UnityProgress.js"></script>
     <script src="Build/UnityLoader.js"></script>
-    <script type="application/javascript" src="/js/main.js"></script>
+    <script src="/js/main.js"></script>
     <script>
       var unityInstance = UnityLoader.instantiate("gameContainer", "Build/BitLife.json", {onProgress: UnityProgress});
     </script>
-  </head>
-  <body>
-  <div class="webgl-content">
-      <div id="gameContainer" style="width: 100%; height: 100%;"></div>
-    </div>
-  </body>
-</html>
+</head>
